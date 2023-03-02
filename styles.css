@@ -1,8 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
 #header {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    padding: 20px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#header-img {
+    width: 300px;
 }
 
 nav {
-    grid-column: 1 / -1;
+    grid-column: 4 / 6;}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ul a {
+    color: black;
+    font-size: 1.8rem;
+    text-decoration: none;
+    align-items: center;
+}
+
+ul a li {
+    list-style: none;
+    align-items: center;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 75px;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+#form {
+    display: grid;
+    justify-content: center;
+}
+
+#form input {
+    margin-bottom: 2rem;
+    justify-self: center;
+    font-size: 1.6rem;
+}
+
+#form input[type="email"] {
+    width: 150%;
+    height: 30px;
+    
+}
+ 
+#form input[type="submit"] {
+    text-transform: uppercase;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 800;
+    background-color: #f1c40f;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#form input[type="submit"]:hover {
+    background-color: #E4572E;
+}
+
+#features {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    max-width: 900px;
+}
+
+.feature .icon {
+    min-width: 100px;
+}
+
+.feature i {
+    color: #E4572E;
+    font-size: 6rem;
+}
+
+.feature .container-description {
+    margin-left: 50px;
+}
+
+.feature .feature-title {
+    font-size: 2.6rem;
+    font-weight: 500;
+}
+
+.feature .description {
+    font-size: 1.6rem;
+}
+
+#video {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
 }
